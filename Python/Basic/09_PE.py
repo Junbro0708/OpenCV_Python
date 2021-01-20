@@ -1,5 +1,5 @@
 def solution(n, lost, reserve):
-    stu = [i for i in range(1, n+1)]
+    stu = [i for i in range(1, n + 1)]
     for i in range(len(lost)):
         if lost[i] in stu:
             stu.remove(lost[i])
@@ -15,4 +15,12 @@ def solution(n, lost, reserve):
     return len(set(stu))
 
 
-print(solution(5, [2, 4], [3]))
+# def solution1(n, lost, reserve):
+#     intersection = set(lost) & set(reserve)
+#     lost_set = set(lost) - intersection
+#     reserve_set = set(reserve) - intersection
+#
+#     return reserve_set
+#
+#
+# print(solution1(5, [2, 4, 3], [3]))
