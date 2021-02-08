@@ -24,7 +24,7 @@ print(df.columns)
 print(df.info())
 print(df.describe())
 
-# --------------------------------------
+# ---------------------------------------
 
 print(df.sort_values(by='B', ascending=True), end="\n\n")  # 정렬
 print(df[['A']])
